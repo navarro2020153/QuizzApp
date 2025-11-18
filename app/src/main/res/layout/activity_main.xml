@@ -3,17 +3,38 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
-    android:padding="16dp">
+    android:gravity="center_horizontal"
+    android:padding="24dp">
 
+    <!-- Pregunta -->
     <TextView
         android:id="@+id/tv_question"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/question_text"
-        android:textSize="20sp"
-        android:layout_marginBottom="20dp"/>
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
 
+    <!-- Progreso -->
+    <TextView
+        android:id="@+id/tv_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pregunta 1 de 5"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Puntaje -->
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puntaje: 0"
+        android:textSize="14sp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Botones de respuesta -->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,13 +44,22 @@
             android:id="@+id/btn_true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/true_text"/>
+            android:text="@string/true_text" />
 
         <Button
             android:id="@+id/btn_false"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/false_text"
-            android:layout_marginStart="16dp"/>
+            android:layout_marginStart="16dp" />
     </LinearLayout>
+
+    <!-- Botón siguiente -->
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siguiente"
+        android:layout_marginTop="32dp" />
+
 </LinearLayout>
